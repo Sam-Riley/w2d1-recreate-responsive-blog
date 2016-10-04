@@ -1,0 +1,170 @@
+* {box-sizing: border-box;}
+html, body {height: 100%}
+img {width:100%}
+h3 {
+    color: white;
+}
+button {
+    display: block;
+    border: 1px solid white;
+    margin: 0 auto;
+    color: white;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+}
+.col-top {
+    width: 100%;
+    flex: 4;
+    background-color: green;
+}
+.main-grid {
+    display: flex;
+    flex-direction: column;
+    height: 95vh; /*CHECK*/
+}
+.picture { /*WRONG SIZE*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 50px solid green;
+    border-radius: 50%;
+
+}
+.col-mid {
+    display: none;
+    flex: 1;
+    width: 100%;
+    background-color: white;
+}
+.about {
+    color: green;
+}
+@media all and (min-width:554px) {
+    .row {
+        flex-direction: row;
+    }
+}
+@media all and (min-width:900px) {
+    .col-mid {
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        flex:1
+    }
+    .projects {
+        flex: 1;
+        /*display: none;*/
+    }
+}
+@media all and (min-width:554px) and (max-width:900px) {
+    .col-top {
+        flex: 6;
+    }
+    .col-low {
+        flex: 6;
+    }
+}
+
+/*@media all and (min-width:900px) {
+    .col-mid {
+        display: block;
+    }
+    .about {
+        display: none;
+    }
+}*/
+
+
+
+
+
+
+
+
+/*NEW ATTEMPT*/
+
+
+
+
+
+
+
+
+
+/*FIRST TRY*/
+/*ul {
+    list-style: inside;
+}
+
+#topstyle {color: white;
+text-align: center;
+}
+#topstyle2 {color: white;
+text-align: center;
+border: 1px solid white;
+
+}
+
+#pic {
+display: block;
+margin-left: auto;
+margin-right: auto;
+border: 50px solid green;
+border-radius: 50%;
+background-color: white;
+}
+#topcolor {
+    background-color: green;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+}
+.row-top {
+    flex-direction: row;
+    text-align: center;
+}
+.col-right {
+    text-align: center;
+}
+.col h1, .col h2, .col h3, .col h4, .col h5, .col h6, .col p {
+    margin: 20px;
+}
+.visible-large {
+    display: none;
+}
+@media screen and (min-width: 554px) {
+    .row {
+        flex-direction: row;
+    }
+    .col-1{flex:1;}
+    .col-2{flex:2;}
+    .col-3{flex:3;}
+    .col-4{flex:4;}
+    .col-5{flex:5;}
+    .col-6{flex:6;}
+    .col-7{flex:7;}
+    .col-8{flex:8;}
+    .col-9{flex:9;}
+    .col-10{flex:10}
+    .col-11{flex:11;}
+    .col-12{flex:12;}
+
+    .visible-large {
+        display:
+    }
+}
+@media screen and (min-width: 554px) and (max-width: 900px) {
+    .row {
+        flex-direction: row;
+    }
+
+
+}
+@media all and (min-width: 900px) {
+    .col-middle-desktop {
+        display: block;
+    }*/
